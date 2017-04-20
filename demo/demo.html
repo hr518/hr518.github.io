@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<ul class="tabtitle" id="tab">
+			<li class="active">
+				微信
+			</li>
+			<li >
+				微博
+			</li>
+		</ul>
+		<div class="tabcontent" >
+			<div class="item-box">
+				<div class="item">
+				   <a href="javascript:">
+				   		<img src="imgs/1.png">
+					    <span>华驿物流</span>
+				   </a>
+				</div>
+				<div class="item">
+					 <a href="javascript:">
+				   		<img src="imgs/2.png">
+					    <span>高快物流</span>
+				   </a>
+				</div>
+				<div class="item">
+				   <a href="javascript:">
+					<img src="imgs/3.png">
+					<span>昆明理工大学</span>
+				  </a>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/4.png">				
+						<span>宏星物流</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/5.png">				
+						<span>锦苑花卉</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/6.png">				
+						<span>湖南发改</span>
+					</a>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/7.png">				
+						<span>广西发改委</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/8.png">				
+						<span>四川发展改革</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/9.png">				
+						<span>贵州发改委</span>
+					</a>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/6.png">			
+						<span>陕西发展改革</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/6.png">			
+						<span>甘肃省发改委</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:">
+						<img src="imgs/6.png">			
+						<span>宁夏发展改革委</span>
+					</a>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="tabcontent" style="display:  none">
+			微博
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+<SCRIPT language=javascript type=text/javascript>
+		$(document).ready(function () {
+			$('.tabtitle li').click(function () {
+			var $this = $(this)
+			var index = $(this).index();
+			$this.addClass('active').siblings('li').removeClass('active');
+			$('.tabcontent').eq(index).show().siblings('.tabcontent').hide();
+			});
+			  
+		})
+</SCRIPT>
+</html>
